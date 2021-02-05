@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ConnectYou- India's Free Vedio Conferencing App"

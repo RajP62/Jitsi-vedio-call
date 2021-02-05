@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217244253154",
+    "project_id": "connectyou-d665c",
+    "storage_bucket": "connectyou-d665c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217244253154:android:8122c7d4031645261e17bb",
+        "android_client_info": {
+          "package_name": "com.example.connectyou_indiasfreevedioconferencingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217244253154-jo0rd11as3viekm6pm8hckqfmkgab59f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU5yuHXj-jRUZsScpJVFEAjbe92R_Dujo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217244253154-jo0rd11as3viekm6pm8hckqfmkgab59f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

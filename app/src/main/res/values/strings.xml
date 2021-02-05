@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ConnectYou- India\'s Free Vedio Conferencing App</string>
+    <string name="Login_txt">Login</string>
+    <string name="create_an_account_txt">Create An Account</string>
+    <string name="email_address_txt">Email Address</string>
+    <string name="password_txt">Password</string>
+    <string name="already_have_an_account_txt">Already Have An Account?</string>
+    <string name="home_txt">Home</string>
+    <string name="history_txt">History</string>
+    <string name="settings_txt">Settings</string>
+    <string name="logout_txt">Logout</string>
+    <string name="please_share_the_below_secret_code_to_start_a_conference_txt">Please share the below secret code to start the conference</string>
+    <string name="secret_code_txt">Secret Code</string>
+    <string name="join_txt">Join</string>
+    <string name="share_txt">Share</string>
+</resources>
