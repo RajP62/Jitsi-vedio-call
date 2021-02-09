@@ -21,7 +21,7 @@ public class SignupActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     EditText emailBox, passwordBox, nameBox;
-    Button loginButton, signUpButton;
+    Button createButton, btnGoToLogin;
 
     FirebaseFirestore database;
 
@@ -34,13 +34,13 @@ public class SignupActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         emailBox = findViewById(R.id.emailBox_signUp);
-        nameBox = findViewById(R.id.nameBox_signUp);
+        nameBox = findViewById(R.id.Name_signUp);
         passwordBox = findViewById(R.id.passwordBox_signUp);
 
-        loginButton = findViewById(R.id.loginbtn_signUp);
-        signUpButton = findViewById(R.id.createbtn_signUp);
+        btnGoToLogin = findViewById(R.id.btn_AlreadyHaveAccount_signUpActivity);
+        createButton = findViewById(R.id.CreateAccount_SignUpActivity);
 
-        signUpButton.setOnClickListener(new View.OnClickListener() {
+        createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email, pass, name;

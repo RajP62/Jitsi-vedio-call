@@ -3,9 +3,12 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
         <item>@font/akronim</item>
+        <item>@font/alfa_slab_one</item>
         <item>@font/allura</item>
         <item>@font/almendra_display</item>
+        <item>@font/bangers</item>
         <item>@font/bowlby_one_sc</item>
+        <item>@font/bungee_outline</item>
         <item>@font/permanent_marker</item>
     </array>
 </resources>

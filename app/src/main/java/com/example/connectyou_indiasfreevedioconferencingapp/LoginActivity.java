@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     TextView tvForgotPassword;
@@ -32,9 +33,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser firebaseUser = auth.getCurrentUser();
+        if (firebaseUser!=null){
+            startActivity(new Intent(LoginActivity.this,DashboardActivity.class));
+            this.finish();
+        }
+
         dialog = new ProgressDialog(this);
         dialog.setMessage("Please wait...");
-        auth = FirebaseAuth.getInstance();
 
         tvForgotPassword = findViewById(R.id.tv_Forgot_Password);
         emailBox = findViewById(R.id.emailBox_loginActivity);
