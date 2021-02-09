@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF5722</color>
     <color name="grey">#c4c4c4</color>
+    <color name="PurpleLight_for_LoginActivity">#9C27B0</color>
+    <color name="dark_grey">#626262</color>
+
 </resources>
