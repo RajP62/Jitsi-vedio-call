@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
+    TextView tvForgotPassword;
     EditText emailBox, passwordBox;
     Button loginButton, signUpButton;
 
@@ -34,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         dialog.setMessage("Please wait...");
         auth = FirebaseAuth.getInstance();
 
+        tvForgotPassword = findViewById(R.id.tv_Forgot_Password);
         emailBox = findViewById(R.id.emailBox_loginActivity);
         passwordBox = findViewById(R.id.passwordBox_loginActivity);
 
