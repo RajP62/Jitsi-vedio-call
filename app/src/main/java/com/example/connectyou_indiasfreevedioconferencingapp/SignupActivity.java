@@ -53,19 +53,19 @@ public class SignupActivity extends AppCompatActivity {
                 user.setPass(pass);
                 user.setName(name);
 
-                auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             database.collection("Users")
                                     .document().set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    startActivity(new Intent(SignupActivity.this,LoginActivity.class));
+                                    Toast.makeText(SignupActivity.this, "Account is successfully created", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(SignupActivity.this, LoginActivity.class));
                                 }
                             });
-//                            Toast.makeText(SignupActivity.this, "Account is successfully created", Toast.LENGTH_SHORT).show();
-                        }else{
+                        } else {
                             Toast.makeText(SignupActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }

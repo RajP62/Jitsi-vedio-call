@@ -8,12 +8,17 @@ import android.os.Handler;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class MainActivity extends AppCompatActivity {
+    private LottieAnimationView lottieAnimationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        lottieAnimationView = findViewById(R.id.lottieAnimationView);
+        lottieAnimationView.animate();
 
         new Handler().postDelayed(new Runnable() {
             @Override

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/akronim</item>
+        <item>@font/allura</item>
+        <item>@font/almendra_display</item>
+        <item>@font/bowlby_one_sc</item>
+        <item>@font/permanent_marker</item>
+    </array>
+</resources>

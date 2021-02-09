@@ -41,4 +41,5 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:26.4.0')
     implementation 'com.google.firebase:firebase-firestore'
     implementation ('org.jitsi.react:jitsi-meet-sdk:2.+') { transitive = true }
+    implementation "com.airbnb.android:lottie:3.6.0"
 }
