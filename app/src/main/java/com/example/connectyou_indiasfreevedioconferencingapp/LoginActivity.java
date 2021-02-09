@@ -34,11 +34,11 @@ public class LoginActivity extends AppCompatActivity {
         dialog.setMessage("Please wait...");
         auth = FirebaseAuth.getInstance();
 
-        emailBox = findViewById(R.id.emailBox);
-        passwordBox = findViewById(R.id.passwordBox);
+        emailBox = findViewById(R.id.emailBox_loginActivity);
+        passwordBox = findViewById(R.id.passwordBox_loginActivity);
 
-        loginButton = findViewById(R.id.loginbtn);
-        signUpButton = findViewById(R.id.createbtn);
+        loginButton = findViewById(R.id.loginbtn_loginActivity);
+        signUpButton = findViewById(R.id.createbtn_loginActivity);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

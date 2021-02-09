@@ -31,18 +31,18 @@
                 app:srcCompat="@drawable/vediocall_logo" />
 
             <EditText
-                android:id="@+id/nameBox_signup"
+                android:id="@+id/nameBox_signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/textbox"
                 android:ems="10"
-                android:hint="Full Name"
+                android:hint="@string/full_name_txt"
                 android:inputType="textPersonName"
                 android:padding="10dp" />
 
             <EditText
-                android:id="@+id/emailBox"
+                android:id="@+id/emailBox_signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textbox"
@@ -52,7 +52,7 @@
                 android:padding="10dp" />
 
             <EditText
-                android:id="@+id/passwordBox"
+                android:id="@+id/passwordBox_signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -63,7 +63,7 @@
                 android:padding="10dp" />
 
             <Button
-                android:id="@+id/createbtn"
+                android:id="@+id/createbtn_signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -72,7 +72,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/loginbtn"
+                android:id="@+id/loginbtn_signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

@@ -33,12 +33,12 @@ public class SignupActivity extends AppCompatActivity {
         database = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
 
-        emailBox = findViewById(R.id.emailBox);
-        nameBox = findViewById(R.id.nameBox_signup);
-        passwordBox = findViewById(R.id.passwordBox);
+        emailBox = findViewById(R.id.emailBox_signUp);
+        nameBox = findViewById(R.id.nameBox_signUp);
+        passwordBox = findViewById(R.id.passwordBox_signUp);
 
-        loginButton = findViewById(R.id.loginbtn);
-        signUpButton = findViewById(R.id.createbtn);
+        loginButton = findViewById(R.id.loginbtn_signUp);
+        signUpButton = findViewById(R.id.createbtn_signUp);
 
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
