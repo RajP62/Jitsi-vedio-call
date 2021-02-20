@@ -1,6 +1,7 @@
 package com.example.connectyou_indiasfreevedioconferencingapp;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -99,11 +100,8 @@ public class DashboardActivity extends AppCompatActivity {
                     case R.id.menu_Home_Dashboard:
                         Toast.makeText(DashboardActivity.this, "Home", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.menu_settings_Dashboard:
-                        Toast.makeText(DashboardActivity.this, "Settings", Toast.LENGTH_SHORT).show();
-                        break;
                     case R.id.menu_logout_Dashboard:
-                        startActivity(new Intent(DashboardActivity.this,LoginActivity.class));
+                        deleteAppData();
                     default:
                         break;
                 }
@@ -112,5 +110,16 @@ public class DashboardActivity extends AppCompatActivity {
         });
 
     }
+//    delete the app data
+    private void deleteAppData() {
+        try {
+            // clearing app data
+            String packageName = getApplicationContext().getPackageName();
+            Runtime runtime = Runtime.getRuntime();
+            runtime.exec("pm clear "+packageName);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } }
 
 }

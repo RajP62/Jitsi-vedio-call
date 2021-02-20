@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
-        android:text="💜 ConnectYou"
+        android:text="@string/connectyou_txt"
         android:textColor="@color/PurpleLight_for_LoginActivity"
         android:textSize="@dimen/sp_20"
         android:textStyle="bold"
