@@ -15,4 +15,8 @@
     <string name="share_txt">Share</string>
     <string name="hii_welcome_to_connectyou_community_txt">Hii!Welcome to ConnectYou community</string>
     <string name="full_name_txt">Full Name</string>
+    <string name="privacy_terms_of_service_txt">Privacy ∙ Terms of Service</string>
+    <string name="forgot_password_txt">Forgot password?</string>
+    <string name="connectyou_txt">💜 ConnectYou</string>
+    <string name="no_internet_txt">No Internet</string>
 </resources>

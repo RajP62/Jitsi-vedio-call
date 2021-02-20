@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/wifi_not_available"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_internet_txt"
+        android:textSize="@dimen/sp_25"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check internet connection"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_connect_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_margin="@dimen/dp_20"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/ic_launcher_background"/>
+
+
+
+</LinearLayout>

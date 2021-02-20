@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
-        android:text="💜 ConnectYou"
+        android:text="@string/connectyou_txt"
         android:textColor="@color/PurpleLight_for_LoginActivity"
         android:textSize="@dimen/sp_20"
         android:textStyle="bold"
@@ -105,20 +105,10 @@
         android:id="@+id/tv_Forgot_Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot password?"
+        android:text="@string/forgot_password_txt"
         android:textColor="@color/PurpleLight_for_LoginActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Linear_layout_LoginActivity" />
 
-    <TextView
-        android:id="@+id/tv_Privacy_TermsService"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Privacy ∙ Terms of Service "
-        android:textColor="@color/dark_grey"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Forgot_Password" />
 </androidx.constraintlayout.widget.ConstraintLayout>
