@@ -20,7 +20,7 @@
         android:id="@+id/tvConnectView_txt_for_DashBoardActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="sans-serif-condensed-light"
         android:gravity="center"
         android:text="@string/connectyou_txt"
         android:textColor="@color/PurpleLight_for_LoginActivity"

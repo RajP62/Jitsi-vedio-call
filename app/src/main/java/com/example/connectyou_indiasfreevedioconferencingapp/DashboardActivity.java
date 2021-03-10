@@ -62,15 +62,15 @@ public class DashboardActivity extends AppCompatActivity {
         joinBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (secretCodeBox.getText().toString().length()<6){
+                if (secretCodeBox.getText().toString().length() < 6) {
                     secretCodeBox.setError("Secretcode should be minimum of 6 digits");
-                }else {
+                } else {
                     JitsiMeetConferenceOptions options = new JitsiMeetConferenceOptions.Builder()
                             .setRoom(secretCodeBox.getText().toString())
                             .setWelcomePageEnabled(false)
                             .build();
 
-                    JitsiMeetActivity.launch(DashboardActivity.this,options);
+                    JitsiMeetActivity.launch(DashboardActivity.this, options);
                 }
 
             }
@@ -78,16 +78,16 @@ public class DashboardActivity extends AppCompatActivity {
         shareBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (secretCodeBox.getText().toString().length()<6){
+                if (secretCodeBox.getText().toString().length() < 6) {
                     secretCodeBox.setError("Secretcode should be minimum of 6 digits");
-                }else {
-                    final String secretCode ="The code to join the meeting is "
+                } else {
+                    final String secretCode = "The code to join the meeting is "
                             + secretCodeBox.getText().toString();
                     Intent intent = new Intent();
                     intent.setAction(Intent.ACTION_SEND);
-                    intent.putExtra(Intent.EXTRA_TEXT,secretCode);
+                    intent.putExtra(Intent.EXTRA_TEXT, secretCode);
                     intent.setType("text/plain");
-                    intent = Intent.createChooser(intent,"Invite participants");
+                    intent = Intent.createChooser(intent, "Invite participants");
                     startActivity(intent);
                 }
 
@@ -96,7 +96,7 @@ public class DashboardActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.menu_Home_Dashboard:
                         Toast.makeText(DashboardActivity.this, "Home", Toast.LENGTH_SHORT).show();
                         break;
@@ -110,16 +110,17 @@ public class DashboardActivity extends AppCompatActivity {
         });
 
     }
-//    delete the app data
+
+    //    delete the app data
     private void deleteAppData() {
         try {
             // clearing app data
             String packageName = getApplicationContext().getPackageName();
             Runtime runtime = Runtime.getRuntime();
-            runtime.exec("pm clear "+packageName);
+            runtime.exec("pm clear " + packageName);
 
         } catch (Exception e) {
             e.printStackTrace();
-        } }
-
+        }
+    }
 }
